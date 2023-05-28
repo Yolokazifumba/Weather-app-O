@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="source/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ff9fc581d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="input-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="input-field" type="text" placeholder="Name of the city" />
+
+        <input class="btn btn-primary" type="submit" value="Search" />
+        <button id="current-location-button">Current temperature</button>
+      </form>
+    </div>
+
+    <div class="wrapper">
+      <h1>Cape Town</h1>
+      <br />
+      <h2>
+        <span id="temp">18</span>
+        <sup class="units"
+          ><span><a id="celsius" href="">°C</a></span
+          >|<span><a id="fenhereit" href="">°F</a></span></sup
+        >
+
+        🌥
+      </h2>
+
+      <h3><span id="current-time"></span> 18/14°C</h3>
+      <br />
+
+      <div class="inner-container text-center">
+        <div class="row align-items-start">
+          <div class="col">07:00</div>
+          <div class="col">08:00</div>
+          <div class="col">09:00</div>
+          <div class="col">10:00</div>
+          <div class="col">11:00</div>
+          <div class="col">12:00</div>
+          <div class="col">13:00</div>
+          <div class="col">14:00</div>
+          <div class="col">15:00</div>
+          <div class="col">16:00</div>
+        </div>
+
+        <div class="row align-items-start">
+          <div class="col">🌧</div>
+          <div class="col">☁️</div>
+          <div class="col">☁️</div>
+          <div class="col">☁️</div>
+          <div class="col">☁️</div>
+          <div class="col">🌥</div>
+          <div class="col">🌥</div>
+          <div class="col">🌥</div>
+          <div class="col">🌥</div>
+          <div class="col">🌥</div>
+        </div>
+
+        <div class="row align-items-start">
+          <div class="col">14°C</div>
+          <div class="col">14°C</div>
+          <div class="col">15°C</div>
+          <div class="col">16°C</div>
+          <div class="col">17°C</div>
+          <div class="col">18°C</div>
+          <div class="col">18°C</div>
+          <div class="col">18°C</div>
+          <div class="col">18°C</div>
+          <div class="col">18°C</div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row one">
+        <div class="col-3">Today</div>
+        <div class="col-3">🌧</div>
+        <div class="col-3">Showers</div>
+        <div class="col-3">18/14°C</div>
+      </div>
+
+      <div class="row two">
+        <div class="col-3">Sat</div>
+        <div class="col-3">🌧</div>
+        <div class="col-3">Showers</div>
+        <div class="col-3">19/14°C</div>
+      </div>
+
+      <div class="row three">
+        <div class="col-3">Sun</div>
+        <div class="col-3">🌥</div>
+        <div class="col-3">Partly cloudy</div>
+        <div class="col-3">18/12°C</div>
+      </div>
+
+      <div class="row four">
+        <div class="col-3">Mon</div>
+        <div class="col-3">☀️</div>
+        <div class="col-3">Mostly sunny</div>
+        <div class="col-3">20/13°C</div>
+      </div>
+
+      <div class="row five">
+        <div class="col-3">Tue</div>
+        <div class="col-3">⛅️</div>
+        <div class="col-3">Partly cloudy</div>
+        <div class="col-3">22/11°C</div>
+      </div>
+
+      <div class="row six">
+        <div class="col-3">Wed</div>
+        <div class="col-3">☁️</div>
+        <div class="col-3">Cloudy</div>
+        <div class="col-3">22/14°C</div>
+      </div>
+      <br />
+      <div class="footer">Created by Yolokazi Fumba</div>
+    </div>
+
+    <script src="source/script.js"></script>
+  </body>
+</html>
