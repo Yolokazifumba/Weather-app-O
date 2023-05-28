@@ -122,3 +122,8 @@ h3 {
   text-align: center;
   color: grey;
 }
+
+.source-link a {
+  text-decoration: none;
+  color: red;
+}
